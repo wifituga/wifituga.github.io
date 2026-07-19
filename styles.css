@@ -420,41 +420,30 @@ h1 em {
   background: var(--ink);
   color: var(--white);
 }
-.inverse-heading {
-  border-bottom-color: rgba(255, 255, 255, 0.3);
+.origin-heading {
+  max-width: 720px;
+  margin: 0 auto 24px;
+  text-align: center;
 }
-.origin-grid {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: clamp(36px, 6vw, 72px);
-  align-items: start;
+.origin-heading .eyebrow {
+  color: #777;
+}
+.origin-heading h2 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(20px, 2.2vw, 28px);
+  letter-spacing: -0.03em;
 }
 blockquote {
-  margin: 0;
+  max-width: 760px;
+  margin: 0 auto;
   color: var(--acid);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(22px, 2.6vw, 34px);
+  font-size: clamp(20px, 2.3vw, 30px);
   font-weight: 900;
   letter-spacing: -0.035em;
-  line-height: 1.1;
-}
-.origin-copy {
-  max-width: 600px;
-}
-.origin-copy p {
-  margin: 0 0 16px;
-  color: #c7c7c0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(15px, 1.35vw, 18px);
-  line-height: 1.6;
-}
-.origin-copy strong {
-  color: var(--white);
-}
-.inverse-link {
-  display: inline-block;
-  margin-top: 8px;
-  color: var(--acid);
+  line-height: 1.15;
+  text-align: center;
 }
 
 .principles-grid {
@@ -534,9 +523,6 @@ footer > div {
   }
   .version {
     margin-bottom: 20px;
-  }
-  .origin-grid {
-    grid-template-columns: 1fr;
   }
   .principles-grid {
     grid-template-columns: 1fr;
