@@ -272,24 +272,6 @@ h1 em {
   text-align: center;
 }
 
-.signal {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-bottom: 1px solid var(--ink);
-  background: var(--acid);
-}
-.signal span {
-  padding: 15px 20px;
-  border-right: 1px solid var(--ink);
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  text-align: center;
-}
-.signal span:last-child {
-  border-right: 0;
-}
-
 .section {
   padding: clamp(52px, 6vw, 84px) max(24px, calc((100vw - var(--max)) / 2));
 }
@@ -584,16 +566,6 @@ footer > div {
   }
   .brand small {
     display: none;
-  }
-  .signal {
-    grid-template-columns: 1fr;
-  }
-  .signal span {
-    border-right: 0;
-    border-bottom: 1px solid var(--ink);
-  }
-  .signal span:last-child {
-    border-bottom: 0;
   }
   .section-heading {
     grid-template-columns: 1fr;
